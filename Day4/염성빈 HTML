@@ -1,0 +1,99 @@
+<button id="theme-toggle">🌞 라이트 모드</button>
+
+  <div class="container">
+    <header>
+  <div class="profile-wrapper">
+    <div class="profile-info">
+      <h1>염성빈</h1>
+      <p class="age">나이: 18세</p>
+      <p class="tagline">웹 개발과 AI를 공부하고 있는 고등학생입니다.</p>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub" title="GitHub">💼</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">🤍</a>
+        <a href="#" aria-label="Twitter" title="Twitter">⚽</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="recent-posts">
+      <h2>📝 최근 게시물</h2>
+      <div class="post-grid">
+
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-icon">🤝</span>
+            <h3>AI와 프로그래머의 협업</h3>
+          </div>
+          <p class="post-date">2025.08.01</p>
+          <p class="post-summary">
+            AI와 프로그래머가 어떻게 함께 일하며 새로운 아이디어를 실현할 수 있는지에 대해 탐구했습니다.
+          </p>
+
+          <!-- 댓글 영역 -->
+          <div class="comments">
+            <h4>댓글</h4>
+            <ul class="comment-list"></ul>
+
+            <form class="comment-form">
+              <input type="text" class="comment-input" placeholder="댓글을 입력하세요" required />
+              <button type="submit">등록</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-icon">⚖️</span>
+            <h3>AI의 일자리 대체에 대한 나의 생각</h3>
+          </div>
+          <p class="post-date">2025.07.28</p>
+          <p class="post-summary">
+            AI가 인간의 일자리를 어떻게 바꾸고 있는지, 그리고 이에 대한 나의 입장을 정리해보았습니다.
+          </p>
+
+          <!-- 댓글 영역 -->
+          <div class="comments">
+            <h4>댓글</h4>
+            <ul class="comment-list"></ul>
+
+            <form class="comment-form">
+              <input type="text" class="comment-input" placeholder="댓글을 입력하세요" required />
+              <button type="submit">등록</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-header">
+            <span class="post-icon">📚</span>
+            <h3>로봇시대, 인간의 일 감상</h3>
+          </div>
+          <p class="post-date">2025.07.20</p>
+          <p class="post-summary">
+            구본권 작가의 책을 읽고, AI 시대에 인간만이 할 수 있는 역할은 무엇일지 고민한 글입니다.
+          </p>
+
+          <!-- 댓글 영역 -->
+          <div class="comments">
+            <h4>댓글</h4>
+            <ul class="comment-list"></ul>
+
+            <form class="comment-form">
+              <input type="text" class="comment-input" placeholder="댓글을 입력하세요" required />
+              <button type="submit">등록</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="goal">
+      <h2>🎯 나의 목표</h2>
+      <p>
+        저는 인공지능과 소프트웨어 개발을 통해 세상에 긍정적인 영향을 주는 기술을 만들고 싶습니다.
+        창의적인 프로젝트를 기획하고, 직접 코딩하며 성장하는 개발자가 되는 것이 제 꿈입니다.
+      </p>
+    </section>
+  </div>
