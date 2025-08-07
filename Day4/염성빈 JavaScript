@@ -1,0 +1,41 @@
+// 다크/라이트 모드 토글
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+// 페이지 로드 시 저장된 테마 적용
+if (localStorage.getItem('theme') === 'light') {
+  body.classList.add('light');
+  toggleBtn.textContent = '🌙 다크 모드';
+} else {
+  toggleBtn.textContent = '🌞 라이트 모드';
+}
+
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('light');
+
+  if (body.classList.contains('light')) {
+    toggleBtn.textContent = '🌙 다크 모드';
+    localStorage.setItem('theme', 'light');
+  } else {
+    toggleBtn.textContent = '🌞 라이트 모드';
+    localStorage.setItem('theme', 'dark');
+  }
+});
+
+// 게시물별 댓글 기능
+document.querySelectorAll('.post-card').forEach(card => {
+  const form = card.querySelector('.comment-form');
+  const input = card.querySelector('.comment-input');
+  const commentList = card.querySelector('.comment-list');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const commentText = input.value.trim();
+    if (!commentText) return;
+
+    const li = document.createElement('li');
+    li.textContent = commentText;
+    commentList.appendChild(li);
+    input.value = '';
+  });
+});
