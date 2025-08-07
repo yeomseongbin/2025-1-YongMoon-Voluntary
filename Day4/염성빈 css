@@ -1,0 +1,300 @@
+/* 기본 설정 - 다크 모드 */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+/* 헤더 */
+header {
+  background: linear-gradient(135deg, #4fc3f7, #1a9be6);
+  padding: 25px 20px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(79, 195, 247, 0.4);
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+.age {
+  margin: 4px 0 8px 0;
+  font-size: 1.2em;
+  opacity: 0.85;
+}
+
+.tagline {
+  font-size: 1.1em;
+  font-weight: 500;
+  opacity: 0.9;
+  max-width: 400px;
+}
+
+.social-links a {
+  font-size: 1.6em;
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #ffe066;
+  transform: scale(1.2);
+}
+
+
+/* 공통 섹션 스타일 */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  border-bottom: 2px solid #4fc3f7;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  color: #4fc3f7;
+  font-size: 1.8em;
+}
+
+/* 게시물 카드 스타일 */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.post-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.post-card h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.post-date {
+  font-size: 0.85em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.post-summary {
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* 댓글 스타일 */
+.comments {
+  margin-top: auto;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #ccc;
+}
+
+.comments h4 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  color: #4fc3f7;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  max-height: 100px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comment-list li {
+  padding: 5px 8px;
+  background-color: #292929;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  word-break: break-word;
+  color: inherit;
+}
+
+.comment-form {
+  display: flex;
+  gap: 6px;
+}
+
+.comment-input {
+  flex-grow: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9em;
+  background-color: #333;
+  color: #eee;
+}
+
+.comment-input::placeholder {
+  color: #999;
+}
+
+.comment-form button {
+  background-color: #4fc3f7;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #38a1db;
+}
+
+/* 나의 목표 섹션 */
+.goal p {
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.6;
+  background-color: #202020;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 라이트 모드 스타일 */
+body.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.light .container {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+body.light header h1,
+body.light .post-card h3,
+body.light section h2 {
+  color: #222;
+}
+
+body.light header .age,
+body.light .post-date {
+  color: #555;
+}
+
+body.light .post-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+}
+
+body.light .post-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+body.light .post-summary,
+body.light .goal p,
+body.light .comments {
+  color: #222; /* 좀 더 진하고 선명한 텍스트 */
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+body.light .comment-list li {
+  color: #222;
+  background-color: #e6e6e6; /* 연한 회색 배경 */
+}
+
+body.light .comment-input {
+  color: #222;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+body.light .comment-input::placeholder {
+  color: #666;
+}
+
+/* 테마 토글 버튼 - 작고 고정 */
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4fc3f7;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  user-select: none;
+}
+
+#theme-toggle:hover {
+  background-color: #38a1db;
+}
